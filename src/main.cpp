@@ -1,43 +1,24 @@
-#include "DHTesp.h"
+#include <Arduino.h>
+#define GREENLED 13
+#define SWITCH 12
+void setup(){
 
-#ifdef ESP32
-#pragma message(THIS EXAMPLE IS FOR ESP8266 ONLY!)
-#error Select ESP8266 board.
-#endif
-
-DHTesp dht;
-
-void setup()
-{
   Serial.begin(115200);
-  Serial.println();
-  Serial.println("Status\tHumidity (%)\tTemperature (C)\t(F)\tHeatIndex (C)\t(F)");
-  String thisBoard= ARDUINO_BOARD;
-  Serial.println(thisBoard);
-
-  // Autodetect is not working reliable, don't use the following line
-  // dht.setup(17);
-  // use this instead: 
-  dht.setup(17, DHTesp::DHT22); // Connect DHT sensor to GPIO 17
+  pinMode(GREENLED, OUTPUT);
+  pinMode(SWITCH,INPUT);
+  Serial.println("Start");
 }
 
-void loop()
-{
-  delay(dht.getMinimumSamplingPeriod());
+void loop(){
+ 
+  digitalWrite(GREENLED,LOW);
+  Serial.println("The green led is off");
+  delay(1000);
+  digitalWrite(GREENLED,HIGH);
+  Serial.println("The green led is on");
+  delay(1000);
+  if(SWITCH==HIGH){
+    Serial.println("Button pressed");
+  }
 
-  float humidity = dht.getHumidity();
-  float temperature = dht.getTemperature();
-
-  Serial.print(dht.getStatusString());
-  Serial.print("\t");
-  Serial.print(humidity, 1);
-  Serial.print("\t\t");
-  Serial.print(temperature, 1);
-  Serial.print("\t\t");
-  Serial.print(dht.toFahrenheit(temperature), 1);
-  Serial.print("\t\t");
-  Serial.print(dht.computeHeatIndex(temperature, humidity, false), 1);
-  Serial.print("\t\t");
-  Serial.println(dht.computeHeatIndex(dht.toFahrenheit(temperature), humidity, true), 1);
-  delay(2000);
 }

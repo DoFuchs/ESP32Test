@@ -8,7 +8,6 @@
             "includePath": [
                 "/home/fuchs/Documents/PlatformIO/Projects/ESP32/include",
                 "/home/fuchs/Documents/PlatformIO/Projects/ESP32/src",
-                "/home/fuchs/Documents/PlatformIO/Projects/ESP32/.pio/libdeps/firebeetle32/DHT sensor library for ESPx",
                 "/home/fuchs/.platformio/packages/framework-arduinoespressif32/tools/sdk/include/config",
                 "/home/fuchs/.platformio/packages/framework-arduinoespressif32/tools/sdk/include/app_trace",
                 "/home/fuchs/.platformio/packages/framework-arduinoespressif32/tools/sdk/include/app_update",
@@ -67,6 +66,7 @@
                 "/home/fuchs/.platformio/packages/framework-arduinoespressif32/tools/sdk/include/fb_gfx",
                 "/home/fuchs/.platformio/packages/framework-arduinoespressif32/cores/esp32",
                 "/home/fuchs/.platformio/packages/framework-arduinoespressif32/variants/firebeetle32",
+                "/home/fuchs/Documents/PlatformIO/Projects/ESP32/.pio/libdeps/firebeetle32/DHT sensor library for ESPx",
                 "/home/fuchs/.platformio/packages/framework-arduinoespressif32/libraries/ArduinoOTA/src",
                 "/home/fuchs/.platformio/packages/framework-arduinoespressif32/libraries/AsyncUDP/src",
                 "/home/fuchs/.platformio/packages/framework-arduinoespressif32/libraries/AzureIoT/src",
@@ -101,7 +101,6 @@
                 "path": [
                     "/home/fuchs/Documents/PlatformIO/Projects/ESP32/include",
                     "/home/fuchs/Documents/PlatformIO/Projects/ESP32/src",
-                    "/home/fuchs/Documents/PlatformIO/Projects/ESP32/.pio/libdeps/firebeetle32/DHT sensor library for ESPx",
                     "/home/fuchs/.platformio/packages/framework-arduinoespressif32/tools/sdk/include/config",
                     "/home/fuchs/.platformio/packages/framework-arduinoespressif32/tools/sdk/include/app_trace",
                     "/home/fuchs/.platformio/packages/framework-arduinoespressif32/tools/sdk/include/app_update",
@@ -160,6 +159,7 @@
                     "/home/fuchs/.platformio/packages/framework-arduinoespressif32/tools/sdk/include/fb_gfx",
                     "/home/fuchs/.platformio/packages/framework-arduinoespressif32/cores/esp32",
                     "/home/fuchs/.platformio/packages/framework-arduinoespressif32/variants/firebeetle32",
+                    "/home/fuchs/Documents/PlatformIO/Projects/ESP32/.pio/libdeps/firebeetle32/DHT sensor library for ESPx",
                     "/home/fuchs/.platformio/packages/framework-arduinoespressif32/libraries/ArduinoOTA/src",
                     "/home/fuchs/.platformio/packages/framework-arduinoespressif32/libraries/AsyncUDP/src",
                     "/home/fuchs/.platformio/packages/framework-arduinoespressif32/libraries/AzureIoT/src",
